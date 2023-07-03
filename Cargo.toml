@@ -3,6 +3,8 @@ name = "system_diskinfo"
 version = "0.1.0"
 authors = ["neyaznafiz"]
 edition = "2021"
+description = "A package for collect information about system disk drive means SSD/HDD etc."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
