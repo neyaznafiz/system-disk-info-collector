@@ -13,10 +13,8 @@ You can collect disk information from any device with just a function call. you 
 ### **Example**
 We are printing here the total capacity information about the disk drive of a system.
 
+*src/main.rs*
 ```
-src/main.rs
---------------
-
 mod drive_size;
 
 fn main() {
