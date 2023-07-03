@@ -16,7 +16,7 @@ We are printing here the total capacity information about the disk drive of a sy
 
 ```
 src/main.rs
--------------------
+--------------
 
 mod drive_size;
 
