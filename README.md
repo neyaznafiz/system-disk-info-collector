@@ -1,35 +1,62 @@
-## Drive Information Collector
+## System Disk Information Collector
 A package for collect information about disk drive means SSD/HDD etc.
 
 You can collect disk information from any device with just a function call. you will be able to collect the `disk name`, `disk model`, `disk size` and `disk serial number` information with this package.
 
-### **Functions**
+**Install Package**
+```
+cargo add system_diskinfo
+```
 
+**Add Dependencies**
+```
+system_diskinfo = "0.1.2"
+```
+
+### **Modules**
+- `driveName`
+- `driveSize`
+- `driveModel`
+- `driveSerialNumber`
+
+### **Functions**
 - `drive_name()` for collect the name of system disk drive.
+- `drive_size()` for collect the total capacity of disk drive.
 - `drive_model()` for collect the model of system disk drive.
-- `drive_size()` for collect the total capacity of system disk drive.
 - `drive_serial_number()` for collect the serial number of system disk drive.
+
+### **Guideline**
+First of all add this package to your `dependencies` in `cargo.toml` file, then open a file where you want to use and add the package in the top of the file like `use system_diskinfo`, after that, to get the correct output use it like this: 
+- First write the package name. ( `system_diskinfo` )
+- Add double clone. ( `::` )
+- Write module name using camel case. ( `driveName` )
+- Add double clone. ( `::` )
+- Call the function using snake case. ( `drive_name` )
 
 ### **Example**
 We are printing here the total capacity information about the disk drive of a system.
 
-
+*cargo.toml*
 ```
-src/main.rs
---------------
+[dependencies]
+system_diskinfo = "0.1.2"
+```
 
-mod drive;
-use drive::{driveSize};
+*main.rs*
+```
+use system_diskinfo;
 
 fn main() {
-  let size = driveSize::drive_size();
+  let size = system_diskinfo::driveSize::drive_size();
   println!("Disk Drive Size: {}",  size);
 }
 ```
+
+Open your terminal with the correct path of your project and run `cargo run` command
 ```
 --- Output ---
 
 Disk Drive Size: 512105932800 
 ```
 
-The function `drive_size()` that we called in the `main` function in `main.rs`, we implemented it in the file called `drive_size.rs`, you will find the file on `src/drive/drive_size.rs` .
+### Best Regards.
