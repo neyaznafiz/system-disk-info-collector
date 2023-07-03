@@ -18,10 +18,11 @@ We are printing here the total capacity information about the disk drive of a sy
 src/main.rs
 --------------
 
-mod drive_size;
+mod drive;
+use drive::{driveSize};
 
 fn main() {
-  let size = drive_size::drive_size();
+  let size = driveSize::drive_size();
   println!("Disk Drive Size: {}",  size);
 }
 ```
@@ -31,4 +32,4 @@ fn main() {
 Disk Drive Size: 512105932800 
 ```
 
-The function `drive_size()` that we called in the `main` function in `main.rs`, we implemented it in the file called `drive_size.rs`, you will find the file on `src/drive_size.rs` .
+The function `drive_size()` that we called in the `main` function in `main.rs`, we implemented it in the file called `drive_size.rs`, you will find the file on `src/drive/drive_size.rs` .

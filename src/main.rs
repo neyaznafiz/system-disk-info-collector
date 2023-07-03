@@ -1,11 +1,9 @@
-// mod drive_name;
-// mod drive_model;
-mod drive_size;
-// mod drive_serial_number;
+mod drive;
+use drive::{driveName, driveModel, driveSize, driveSerialNumber};
 
 fn main()  {
-  // println!("Drive Name: {}",  drive_name::drive_name());
-  // println!("Drive Model: {}",  drive_model::drive_model());
-  println!("Drive Size: {}",  drive_size::drive_size());
-  // println!("Drive Serial Number: {}",  drive_serial_number::drive_serial_number());
+  println!("Drive Name: {}",  driveName::drive_name());
+  println!("Drive Model: {}",  driveModel::drive_model());
+  println!("Drive Size: {}",  driveSize::drive_size());
+  println!("Drive Serial Number: {}",  driveSerialNumber::drive_serial_number());
 }
