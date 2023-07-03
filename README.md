@@ -10,3 +10,22 @@ You can collect disk information from any device with just a function call. you 
 - `drive_size()` for collect the total capacity of system disk drive.
 - `drive_serial_number()` for collect the serial number of system disk drive.
 
+### **Example**
+Here we are printing the total capacity information about the disk drive of a system.
+
+```
+src/main.rs
+--------------
+
+mod drive_size;
+
+fn main() {
+  let size = drive_size::drive_size();
+  println!("Disk Drive Size: {}",  size);
+}
+```
+```
+--- Output ---
+
+Disk Drive Size: 512105932800 
+```
