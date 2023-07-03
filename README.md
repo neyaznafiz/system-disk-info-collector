@@ -11,7 +11,7 @@ You can collect disk information from any device with just a function call. you 
 - `drive_serial_number()` for collect the serial number of system disk drive.
 
 ### **Example**
-Here we are printing the total capacity information about the disk drive of a system.
+We are printing here the total capacity information about the disk drive of a system.
 
 ```
 src/main.rs
