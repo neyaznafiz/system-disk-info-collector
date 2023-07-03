@@ -29,3 +29,5 @@ fn main() {
 
 Disk Drive Size: 512105932800 
 ```
+
+The function `drive_size()` that we called in the `main` function in `main.rs`, we implemented it in the file called `drive_size.rs`, you will find the file in this path `src/drive_size.rs` .
