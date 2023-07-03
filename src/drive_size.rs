@@ -8,6 +8,8 @@ pub fn drive_size() -> String {
   .output()
   .expect("failed to execute process");
 
-  let size = String::from_utf8(output.stdout.to_vec()).unwrap();
-  return size;
+  let result = String::from_utf8(output.stdout.to_vec()).unwrap();
+  let size:Vec<&str> = result.split("\n").collect();
+
+  return size[1].to_string();
 }

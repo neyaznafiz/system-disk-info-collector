@@ -8,6 +8,8 @@ pub fn drive_serial_number() -> String {
   .output()
   .expect("failed to execute process");
 
-  let serial_number = String::from_utf8(output.stdout.to_vec()).unwrap();
-  return serial_number;
+  let result = String::from_utf8(output.stdout.to_vec()).unwrap();
+  let serial_number:Vec<&str> = result.split("\n").collect();
+
+  return serial_number[1].to_string();
 }

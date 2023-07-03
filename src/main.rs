@@ -4,5 +4,8 @@ mod drive_size;
 mod drive_serial_number;
 
 fn main()  {
-  println!("{}-{}-{}-{}",  drive_name::drive_name(), drive_model::drive_model(), drive_size::drive_size(), drive_serial_number::drive_serial_number());
+  println!("Drive Name: {}",  drive_name::drive_name());
+  println!("Drive Model: {}",  drive_model::drive_model());
+  println!("Drive Size: {}",  drive_size::drive_size());
+  println!("Drive Serial Number: {}",  drive_serial_number::drive_serial_number());
 }
