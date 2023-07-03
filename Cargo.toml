@@ -1,10 +1,13 @@
 [package]
 name = "system_diskinfo"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["neyaznafiz"]
 edition = "2021"
 description = "A package for collect information about system disk drive means SSD/HDD etc."
 license = "MIT"
+documentation = "https://docs.rs/system_diskinfo"
+repository = "https://github.com/neyaznafiz/system-diskinfo"
+keywords = ["system", "disk", "drive"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
