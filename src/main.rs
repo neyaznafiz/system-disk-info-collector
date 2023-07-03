@@ -2,8 +2,14 @@ mod drive;
 use drive::{driveName, driveModel, driveSize, driveSerialNumber};
 
 fn main()  {
-  println!("Drive Name: {}",  driveName::drive_name());
-  println!("Drive Model: {}",  driveModel::drive_model());
-  println!("Drive Size: {}",  driveSize::drive_size());
-  println!("Drive Serial Number: {}",  driveSerialNumber::drive_serial_number());
+
+  let name = driveName::drive_name();
+  let model = driveModel::drive_model();
+  let size = driveSize::drive_size();
+  let serial_number = driveSerialNumber::drive_serial_number();
+
+  println!("{}", name);
+  println!("{}", model);
+  println!("{}", size);
+  println!("{}", serial_number);
 }
