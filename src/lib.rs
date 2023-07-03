@@ -1,5 +1,5 @@
-mod drive;
-pub use drive::{driveName, driveModel, driveSize, driveSerialNumber};
+mod system_diskinfo;
+pub use system_diskinfo::{driveName, driveModel, driveSize, driveSerialNumber};
 
 /// A package for collect information about disk drive means SSD/HDD etc.
 ///  
@@ -18,8 +18,8 @@ pub use drive::{driveName, driveModel, driveSize, driveSerialNumber};
 /// src/main.rs
 /// --------------
 /// 
-/// mod drive;
-/// use drive::{driveSize};
+/// mod system_diskinfo;
+/// use system_diskinfo::{driveSize};
 /// 
 /// fn main() {
 ///   let size = driveSize::drive_size();

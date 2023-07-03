@@ -1,5 +1,5 @@
-mod drive;
-use drive::{driveName, driveModel, driveSize, driveSerialNumber};
+pub mod system_diskinfo;
+pub use crate::system_diskinfo::{driveName, driveModel, driveSize, driveSerialNumber};
 
 fn main()  {
 
