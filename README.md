@@ -1,7 +1,7 @@
 ## System Disk Information Collector
-A package for collect information about disk drive means SSD/HDD etc.
+A package for collect information about disk drive means SSD/HDD etc of a windows operating system.
 
-You can collect disk information from any device with just a function call. you will be able to collect the `disk name`, `disk model`, `disk size` and `disk serial number` information with this package.
+You can collect disk information from any device with just a function call. you will be able to collect the `disk name`, `disk model`, `disk size` and `disk serial number` information of a windows system with this package.
 
 **Install Package**
 ```
@@ -34,7 +34,7 @@ First of all add this package to your `dependencies` in `cargo.toml` file, then 
 - Call the function using snake case. ( `drive_name` )
 
 ### **Example**
-We are printing here the total capacity information about the disk drive of a system.
+We are printing here the total capacity information about the disk drive of a windows system.
 
 *cargo.toml*
 ```

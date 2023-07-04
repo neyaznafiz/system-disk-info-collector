@@ -1,7 +1,7 @@
 mod system_diskinfo;
 pub use system_diskinfo::{driveName, driveModel, driveSize, driveSerialNumber};
 
-/// A package for collect information about disk drive means SSD/HDD etc.
+/// A package for collect information about disk drive means SSD/HDD etc of a windows operating system.
 ///  
 /// You can collect disk information from any device with just a function call. you will be able to collect the `disk name`, `disk model`, `disk size` and `disk serial number` information with this package.
 /// 
@@ -12,7 +12,7 @@ pub use system_diskinfo::{driveName, driveModel, driveSize, driveSerialNumber};
 /// `drive_serial_number()` for collect the serial number of system disk drive. </br>
 ///  
 /// ### Example
-/// We are printing here the total capacity information about the disk drive of a system.
+/// We are printing here the total capacity information about the disk drive of a windows system.
 ///  
 /// ```
 /// src/main.rs
