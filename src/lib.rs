@@ -1,5 +1,5 @@
-mod disk_info;
-mod cpu_info;
+pub mod disk_info;
+pub mod cpu_info;
 mod sanitize_data;
 
 /// A package for collect information of a system.
