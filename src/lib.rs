@@ -2,7 +2,7 @@ mod disk_info;
 mod cpu_info;
 mod sanitize_data;
 
-/// A package for collect information about disk drive means SSD/HDD etc of a windows operating system.
+/// A package for collect information of a system.
 ///  
 /// You can collect disk information from any device with just a function call. you will be able to collect the `disk name`, `disk model`, `disk size` and `disk serial number` information with this package.
 /// 

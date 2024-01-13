@@ -10,7 +10,7 @@ cargo add system_diskinfo
 
 **Add Dependencies**
 ```
-system_diskinfo = "0.1.4"
+system_diskinfo = "0.2.0"
 ```
 
 ### **Modules**
