@@ -10,14 +10,5 @@ pub fn id() -> Result<String,DriveError>  {
   .output()
   .expect("failed to execute process");
 
-  let result = String::from_utf8(output.stdout.to_vec());
-
-  if let Err(error) = result {
-    return Err(DriveError::FromUtf8Error);
-  }
-
-  let data = result.unwrap();
-  println!("{:?}", data);
-  
   sanitize(output)
 }
