@@ -1,5 +1,9 @@
-mod disk_info;
-mod cpu_info;
+pub mod disk_info;
+pub use disk_info as DiskInfo;
+
+pub mod cpu_info;
+pub use cpu_info as CpuInfo;
+
 mod sanitize_data;
 
 /// A package for collect information about disk drive means SSD/HDD etc of a windows operating system.
@@ -36,19 +40,19 @@ mod sanitize_data;
 /// The function `drive_size()` that we called in the main function in main.rs, we implemented it in the file called `drive_size.rs`, you will find the file on `src/drive/drive_size.rs`.
 
 pub fn read_doc()  {
-  let disk_name = disk_info::Name::drive_name();
-  let disk_model = disk_info::Model::drive_model();
-  let disk_size = disk_info::Size::drive_size();
-  let disk_serial_number = disk_info::SerialNumber::drive_serial_number();
+  let disk_name = DiskInfo::name();
+  let disk_model = DiskInfo::model();
+  let disk_size = DiskInfo::size();
+  let disk_serial_number = DiskInfo::serial_number();
 
   println!("{:?}", disk_name);
   println!("{:?}", disk_model);
   println!("{:?}", disk_size);
   println!("{:?}", disk_serial_number);
 
-  let cpu_name = cpu_info::Name::cpu_name();
-  let cpu_cores = cpu_info::NumberOfCores::cpu_cores();
-  let cpu_id = cpu_info::ProcessorID::id();
+  let cpu_name = CpuInfo::name();
+  let cpu_cores = CpuInfo::cores();
+  let cpu_id = CpuInfo::processor_id();
 
   println!("{:?}", cpu_name);
   println!("{:?}", cpu_cores);
