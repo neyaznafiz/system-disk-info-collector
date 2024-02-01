@@ -1,9 +1,9 @@
 [package]
 name = "system_diskinfo"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["neyaznafiz"]
 edition = "2021"
-description = "A package for collect information of a system etc."
+description = "A package for collect information about system disk drive etc."
 license = "MIT"
 documentation = "https://docs.rs/system_diskinfo"
 repository = "https://github.com/neyaznafiz/system-diskinfo"

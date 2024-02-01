@@ -10,7 +10,7 @@ cargo add system_diskinfo
 
 **Add Dependencies**
 ```
-system_diskinfo = "0.2.1"
+system_diskinfo = "0.2.2"
 ```
 
 ### **Modules**
@@ -39,7 +39,7 @@ We are printing here the total capacity information about the disk drive of a wi
 *cargo.toml*
 ```
 [dependencies]
-system_diskinfo = "0.2.1"
+system_diskinfo = "0.2.2"
 ```
 
 *main.rs*
